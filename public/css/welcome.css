@@ -99,7 +99,8 @@
     }
 
     .event-description,
-    .event-info {
+    .event-info,
+    .title {
         width: 95%;
     }
 }
