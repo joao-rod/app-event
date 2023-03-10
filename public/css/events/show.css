@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-top: 3%;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+
+    width: 80%;
+    padding: 2% 5%;
+
+    background-color: #f8f8f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+}
+
+.event-description {
+    min-width: 60%;
+    max-width: 70%;
+}
+
+.event-description h2{
+    font-size: 19px;
+}
+
+.event-info {
+    width: 40%;
+}
+
+.event-info h2{
+    font-size: 15px;
+}
+
+.content i{
+    color: #5199d4;
+    font-size: 14px;
+
+    margin-right: 2%;
+}
