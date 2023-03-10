@@ -9,7 +9,12 @@
 @section('content')
     <main class="container">
         <section class="cards">
-            <div class="title"><h2>Eventos cadastrados</h2></div>
+            @if (!$events->isNotEmpty())
+                <div class="title"><h2>Nenhum evento cadastrado</h2></div>
+            @else
+                <div class="title"><h2>Eventos cadastrados</h2></div>
+            @endif
+
             @foreach ($events as $event)
                 <div class="card">
                     <div class="event-description">
