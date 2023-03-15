@@ -9,8 +9,19 @@
 @section('content')
     <main class="container">
         <section class="cards">
-            @if (!$events->isNotEmpty())
-                <div class="title"><h2>Nenhum evento cadastrado</h2></div>
+            <form action="/" method="GET" class="search">
+                <input type="text" name="search" id="search" placeholder="Pesquise por um evento...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            @if ($search)
+                <div class="title"><h2>Resultados da busca por "{{ $search }}"</h2></div>
+            @elseif (!$events->isNotEmpty() && $search)
+                <div class="title">
+                    <h2>Nenhum evento encontrado <a href="/">Voltar à home</a></h2>
+                </div>
+            @elseif (!$events->isNotEmpty())
+                <div class="title"><h2>Nenhum evento encontrado</h2></div>
             @else
                 <div class="title"><h2>Eventos cadastrados</h2></div>
             @endif
