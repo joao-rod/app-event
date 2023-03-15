@@ -10,12 +10,17 @@
     <main class="container">
         <form action="/events" method="POST" class="form-content">
             @csrf
-            
+
             <h2>Preencha os dados para criar o evento</h2>
 
             <div class="form-input">
                 <label for="title">Título</label>
                 <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+            </div>
+
+            <div class="form-input">
+                <label for="date">Data</label>
+                <input type="date" name="date" id="date" required>
             </div>
 
             <div class="form-input">

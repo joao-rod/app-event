@@ -41,6 +41,11 @@
                         </p>
 
                         <p>
+                            <i class="fa-solid fa-calendar"></i>
+                            {{ date('d/m/Y', strtotime($event->date)) }}
+                        </p>
+
+                        <p>
                             @if ($event->type == 0)
                                 <i class="fa-solid fa-lock-open"></i>
                                 Evento público
