@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: center;
 
-    background-color: darkgrey;
+    background-color: #44475a;
     height: 5rem;
     width: 100%;
 }
@@ -41,7 +41,7 @@ header {
 
 .footer {
     padding: 1vh 0;
-    background-color: darkgrey;
+    background-color: #44475a;
     color: #f8f8f2;
 
     text-align: center;

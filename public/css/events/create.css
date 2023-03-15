@@ -55,7 +55,7 @@
 
 .form-input input:focus,
 .form-input textarea:focus {
-    border-color: #5199d4;
+    border-color: #6272a4;
 }
 
 .form-input input::placeholder,
@@ -101,9 +101,9 @@
     font-size: 16px;
 
     color: #f8f8f8;
-    background-color: #5199d4;
+    background-color: #6272a4;
 
-    border: 1px solid #5199d4;
+    border: 1px solid #6272a4;
     border-radius: 5px;
 
     cursor: pointer;
