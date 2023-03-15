@@ -16,13 +16,37 @@
     <body>
         <header>
             <section class="navbar">
-                <nav>
-                    <a href="/">Inicio</a>
-                </nav>
+                @auth
+                    <nav>
+                        <a href="/dashboard">Início</a>
+                    </nav>
+
+                    <nav>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <a
+                                href="/logout"
+                                onclick="event.preventDefault()
+                                this.closest('form').submit();"
+                            >Sair</a>
+                        </form>
+                    </nav>
+                @endauth
+
+                @guest
+                    <nav>
+                        <a href="/login">Login</a>
+                    </nav>
+
+                    <nav>
+                        <a href="/register">Registrar</a>
+                    </nav>
+                @endguest
 
                 <nav>
                     <a href="#">Sobre</a>
                 </nav>
+
             </section>
         </header>
 
